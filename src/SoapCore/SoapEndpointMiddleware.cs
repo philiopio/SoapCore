@@ -963,7 +963,10 @@ namespace SoapCore
 
 			meta.CurrentWebService = httpContext.Request.Path.Value.Replace("/", string.Empty);
 
-			WebServiceWSDLMapping mapping = _options.WsdlFileOptions.WebServiceWSDLMapping[meta.CurrentWebService];
+			WebServiceWSDLMapping mapping =
+				_options.WsdlFileOptions.WebServiceWSDLMapping.First(x =>
+					x.Key.ToLower() == meta.CurrentWebService.ToLower()).Value;
+
 
 			meta.XsdFolder = mapping.SchemaFolder;
 			meta.WSDLFolder = mapping.WSDLFolder;

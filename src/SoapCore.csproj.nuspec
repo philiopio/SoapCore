@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SoapCore</id>
+    <version>1.0.1</version>
+    <authors>Philip.Smith</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/DigDes/SoapCore</projectUrl>
+    <description>SOAP protocol middleware for ASP.NET</description>
+    <releaseNotes>Modified middleware to allow for case insensitive wsdl definitiions in configuration</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>SOAP</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="SampleDependency" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
